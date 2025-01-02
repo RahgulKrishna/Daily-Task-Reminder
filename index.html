@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Task Reminder</h1>
+            <p>Keep track of your daily tasks, goals, and reminders</p>
+        </header>
+        
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="tasks-container">
+            <h2 id="taskListTitle">Today's Tasks</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <footer class="footer">
+            <p>Developed by</p>
+            <p>Rahgul Krishna C</p>
+            <a href="https://github.com/RahgulKrishna" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rahgulkrishna" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

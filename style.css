@@ -1,0 +1,200 @@
+/* Resetting margin and padding for body and html to cover the entire viewport */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222831; /* Dark background color */
+}
+
+/* Main container styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #393e46; /* Slightly lighter background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eeeeee; /* Light text color */
+}
+
+/* Header styling for the app */
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #00adb5; /* Accent color */
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif; /* Secondary font */
+}
+
+header p {
+    color: #eeeeee;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Task input styling */
+.task-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.task-input input,
+.task-input button {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #000000; /* Dark text color */
+}
+
+/* Styling for input field */
+.task-input input {
+    flex: 1;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #c4d0e4; /* Light background for input */
+}
+
+/* Button styling */
+.task-input button {
+    padding: 10px 20px;
+    background-color: #00adb5; /* Accent color */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+    color: #222831;
+}
+
+/* Button hover effect */
+.task-input button:hover {
+    background-color: #008b8f; /* Darker accent color on hover */
+}
+
+/* Task list container styling */
+.tasks-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+/* Task list title styling */
+#taskListTitle {
+    font-size: 1.5em;
+    color: #00adb5;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Task list styling */
+#taskList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Task item styling */
+#taskList li {
+    background-color: #222831; /* Dark background for tasks */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    counter-increment: task-counter;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Adding counter for each task */
+#taskList li:before {
+    content: counter(task-counter) ". ";
+    margin-right: 10px;
+    color: #eeeeee; /* Light color for task numbers */
+}
+
+/* Task text styling */
+#taskList li .task-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Delete button styling */
+#taskList li .delete-btn {
+    background-color: #00adb5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #2b3139;
+    transition: background-color 0.3s;
+}
+
+/* Delete button hover effect */
+#taskList li .delete-btn:hover {
+    background-color: #008b8f; /* Darker accent color on hover */
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+/* Footer text styling */
+.footer p {
+    margin-bottom: 5px;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* First footer paragraph styling */
+.footer p:first-of-type {
+    color: #000000; /* Dark color for emphasis */
+    margin-bottom: 0;
+}
+
+/* Last footer paragraph styling */
+.footer p:last-of-type {
+    color: #eeeeee;
+    margin-top: 0;
+}
+
+/* Footer paragraph hover effect */
+.footer p:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* First footer paragraph font size */
+.footer p:first-child {
+    font-size: 1em;
+}
+
+/* Last footer paragraph font size */
+.footer p:last-child {
+    font-size: 1.2em;
+}
+
+/* Social icon styling */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
